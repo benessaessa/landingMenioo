@@ -72,12 +72,22 @@ button:hover {
     text-shadow: 0 0 3px #444
 }
 
+p{
+    font-size: 15px;
+}
+
 .btn {
     border-radius: 30px;
     line-height: 2;
 }
 
 .text-theme {
+    color: #CE00FF;
+    letter-spacing: .05rem;
+}
+
+.request{
+    background-color: #FFFFFF;
     color: #CE00FF;
 }
 
@@ -91,7 +101,7 @@ h4 {
 }
 
 .header-height {
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 
 /************************************************/
@@ -119,7 +129,7 @@ header .navbar {
     margin: 10px 0;
     letter-spacing: .12rem;
     padding: 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 .wrapper-header ul li small{
     font-size: 10px;
@@ -128,22 +138,54 @@ header .navbar {
     margin: 0;
     padding: 0;
     line-height: 2.7rem;
-    font-size: 30px;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
 }
 
 .wrapper-header .right {
     width: 50%;
     margin-top: 5%;
 }
-
+.right img{
+    height: 600px;
+}
+@media screen and (max-width:800px){
+    .right img{
+        width: 100%;
+        padding-top:2rem ;
+        height: 200px;
+    }
+    .wrapper-header .left>h2 {
+        line-height: 1.6rem;
+        letter-spacing: 0.05rem;
+        font-size: 1.3rem;
+    }
+}
 .btnHead li a{
     letter-spacing: 0.1rem;
 }
+
+.registration{
+    background-image: url("../images/bgg.png") !important;
+    background-size: cover;
+    padding: 0.33rem;
+}
+
+.registration img{
+    height: 30px;
+}
+
 .login .form{
     border: 1px solid #71018B;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px #71018B;
+    box-shadow: 0 5px 10px 0 rgba(113,1,139,0.2);
 }
+
+@media screen and(max-width:650px){
+    .loginRow{
+        margin-top: 5px !important;
+    }
+}
+
 .form p small{
     font-size: 12px;
 }
@@ -188,29 +230,47 @@ header .navbar {
     top: 40%;
     left: 45%;
 }
+@media screen and (max-width:750px){
+    .video>button {
+        position: absolute;
+        top: 20%;
+        left: 33%;
+    }
+}
 
 .readon {
     color: #CE00FF;
     text-decoration: underline;
 }
 
-.newsletter {}
 .newsletter input,.newsletter .btn {
-    height: 66px;
-    border-color: #CE00FF;
+    height: 4rem;
+    border:2px solid #CE00FF;
+}
+.newsletter .form-control{
+    width: 30%;
 }
 .menuText h2{
     font-size: 32px;
     letter-spacing: 0.1rem;
+}
+.copyRight{
+    color: rgb(187, 150, 150) !important;
 }
 .menuText p{
     font-size: 22px;
     letter-spacing: .1rem;
 }
 .newsletter input::placeholder {
-    color: #CE00FF
+    color: #CE00FF;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    letter-spacing: .1rem;
 }
-
+.btnSign{
+    font-size: 1.2rem;
+    /* border-radius: 12px; */
+}
 .newsletter span {}
 
 .newsletter button {
@@ -220,8 +280,9 @@ header .navbar {
 footer {
     background: #71018B;
 }
-.inner h2{
-    font-size: 60px;
+.inner h3{
+    font-size: 1.6rem;
+    color: #71018B;
 }
 .inner img{
     margin-right: 1rem;
@@ -230,10 +291,16 @@ footer {
     padding-top: 0.6rem;
     /* letter-spacing: .11rem; */
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .inner-footer h6{
     font-size: 19px;
+}
+.foot p{
+    font-size: 1.2rem;
+}
+.foot p a{
+    font-size: 1rem;
 }
 .inner-footer {
     display: flex;
@@ -244,37 +311,42 @@ footer {
     font-size: 16px;
     line-height: 2.4rem;
 }
+.foot p,.foot p a{
+    color: white !important;
+}
+.foot p a:hover{
+    text-decoration: underline;
+}
 .inner-footer li a:hover{
     text-decoration: underline;
 }
 .copyrights {
-    color: rgba(255, 255, 255, .4)
+    color: rgba(255, 255, 255, .4);
 }
 
-.footer-col>h6 {
+/* .footer-col>h6 {
     color: #FFF
 }
 
 .footer-col a {
     color: #FFF
-}
+} */
 .txtEdit{
-    letter-spacing: .1rem;
     line-height: 3rem;
-    width: 75%;
 }
 .txtBlog{
     font-size: 1.2rem;
     line-height: 2rem;
-    letter-spacing: .13rem;
+    letter-spacing: .1rem;
 }
 @media screen and (max-width:650){
     .txtEdit{
         width: 100%;
+        line-height: 0.5rem;
     }
 } 
 .digitalText{
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 2rem;
     letter-spacing: .1rem;
 }
@@ -309,6 +381,7 @@ footer {
 .form .form-control {
     height: 54px;
     border: 2px solid #999999;
+    border-radius: 0;
 }
 .textArea .form-control{
     height: 10rem;

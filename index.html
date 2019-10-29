@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
     <title>Menioo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,8 +43,8 @@
         </nav>
     </header>
 
-    <div class="wrapper-header pt-5">
-        <div class="left wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+    <div class="wrapper-header pt-5" dir="ltr">
+        <div class="left">
             <h2 class="text-light">Say Goodbye to printed menus
                 and create your own digital tablet
                 menu instantly! </h2>
@@ -69,19 +68,19 @@
                 <li><a href="#"><img src="images/android-ico.png"></a></li>
             </ul>
         </div>
-        <div class="right text-right wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-            <img class="img-fluid" width="100%" height="400" src="images/header-img.png">
+        <div class="right text-right">
+            <img width="100%" src="images/header-img.png">
         </div>
     </div>
 
 
     <section>
         <div class="section-wrapper mx-0 my-5 p-5 row">
-            <div class="col-md-6 col-12 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.4s">
-                <img class="img-fluid" src="images/why-img.png">
+            <div class="col-md-6 col-12 "  >
+                <img width="100%" src="images/why-img.png">
             </div>
-            <div class="col-md-6 col-12 wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.2s">
-                <h2 class="text-theme mt-5">Why use a digital menu?</h2>
+            <div class="col-md-6 col-12 " >
+                <h4 class="text-theme mt-5">Why use a digital menu?</h4>
                 <p class="py-3 digitalText">
                     Digital restaurant menus can open up a whole new world
                     of opportunities for your restaurant with striking visuals,
@@ -96,43 +95,68 @@
     <section id="features" class="my-5 p-5">
         <h2 class="text-theme my-5 text-center"> Features </h2>
         <div class="inner">
-
-            <ul class="row">
-                <li class="col-md-6 col-12 d-flex my-4 align-items-center wow flipInX" data-wow-duration="2s">
-                    <img src="images/features-ico-1.png">
-                    <div class="px-3">
-                        <h4>Menu Management</h4>
-                        <p>With an easy to use web interface, create as many menus as you need, change or add items
-                            at any point of time and publish instantly to your tablets.
-                        </p>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12 d-flex my-4 align-items-center">
+                        <div class="row">
+                            <div class="col-lg-3"><img class="d-flex mx-auto pb-3" 
+                                src="images/features-ico-1.png">
+                            </div>
+                        
+                            <div class="col-lg-9">
+                                <h3>Menu Management</h3>
+                                <p>With an easy to use web interface, create as many menus as you need, change or add items
+                                    at any point of time and publish instantly to your tablets.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="col-md-6 col-12 d-flex my-3 align-items-center wow flipInX" data-wow-duration="2s">
-                    <img src="images/features-ico-.png">
-                    <div class="px-3">
-                        <h4>Design Customization</h4>
-                        <p>Choose your own theme, color, and design. Create a unique looking menu that emphasizes
-                            the essence of your restaurant and the dishes you serve.
-                        </p>
+                    <div class="col-md-6 col-12 d-flex my-3 align-items-center">
+                        
+                        <div class="row">
+                            <div class="col-lg-3"><img class="d-flex mx-auto pb-3" 
+                                src="images/features-ico-.png">
+                            </div>
+                        
+                            <div class="col-lg-9">
+                                <h4>Design Customization</h4>
+                                <p>Choose your own theme, color, and design. Create a unique looking menu that emphasizes
+                                    the essence of your restaurant and the dishes you serve.
+                                </p>
+                            </div>
+                        </div>
+                        
                     </div>
-                </li>
-                <li class="col-md-6 col-12 d-flex my-3 align-items-center wow flipInY" data-wow-duration="2s">
-                    <img src="images/features-ico-3.png">
-                    <div class="px-3">
-                        <h4>Order Traking</h4>
-                        <p>Your guests can make instant orders on the tablet that are sent directly to the
-                            dashboard, to your POS or to your kitchen printers right away. </p>
+                    <div class="col-md-6 col-12 d-flex my-3 align-items-center">
+                        <div class="row">
+                            <div class="col-lg-3"><img class="d-flex mx-auto pb-3" 
+                                src="images/features-ico-3.png">
+                            </div>
+                        
+                            <div class="col-lg-9">
+                                <h4>Order Traking</h4>
+                                <p>Your guests can make instant orders on the tablet that are sent directly to the
+                                    dashboard, to your POS or to your kitchen printers right away. </p>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="col-md-6 col-12 d-flex my-3 align-items-center wow flipInY" data-wow-duration="2s">
-                    <img src="images/features-ico-4.png">
-                    <div class="px-3">
-                        <h4>Feedback Collection</h4>
-                        <p>Collect instant feedback from your guests and prevent your staff from tampering with the
-                            information since they are not printed anymore. </p>
+                    
+                    <div class="col-md-6 col-12 d-flex my-3 align-items-center">
+                        <div class="row">
+                            <div class="col-lg-3"><img class="d-flex mx-auto pb-3" 
+                                src="images/features-ico-4.png">
+                            </div>
+                        
+                            <div class="col-lg-9">
+                                <h4>Feedback Collection</h4>
+                                <p>Collect instant feedback from your guests and prevent your staff from tampering with the
+                                    information since they are not printed anymore. </p>
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+            
 
             <div class="mt-5 py-5 text-center">
                 <button class="btn btn-primary textAbout px-5">Discover More</button>
@@ -141,7 +165,7 @@
         </div>
     </section>
 
-    <section class="my-3 pt-3 wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.8s">
+    <section class="my-3 pt-3 " >
         <h1 class="text-theme my-3 text-center">How does it work?</h1>
         <p class="text-center txtVideo mb-5 pt-3">Three simple steps to get your menu ready!</p>
         <div class="video text-center">
@@ -156,7 +180,7 @@
     <section id="resources" class="my-5 p-5 resourses">
         <h2 class="text-theme pt-3 mb-5 text-center">Resources Made For You</h2>
         <div class="row">
-            <div class="col-md-4 col-12 wow bounceInLeft" data-wow-duration="2s" data-wow-delay="0.4s">
+            <div class="col-md-4 col-12 "  >
                 <img src="images/resources-img-1.png" class="img-fluid">
                 <h4 class="my-2">Why did we develop <br> menioo?</h4>
                 <p class="mt-3">
@@ -166,7 +190,7 @@
                 </p>
                 <button class="btn btn-link p-0 readon">Read More</button>
             </div>
-            <div class="col-md-4 col-12 wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.8s">
+            <div class="col-md-4 col-12 " >
                 <img src="images/resources-img-2.png" class="img-fluid">
                 <h4 class="my-2">Solving the Ticket Time <br> Riddle</h4>
                 <p class="mt-3">
@@ -176,7 +200,7 @@
                 </p>
                 <button class="btn btn-link p-0 readon">Read More</button>
             </div>
-            <div class="col-md-4 col-12 wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.4s">
+            <div class="col-md-4 col-12 "  >
                 <img src="images/resources-img-3.png" class="img-fluid">
                 <h4 class="my-2">Adding Calorie Count! An up-seller? Or a down-seller?</h4>
                 <p class="mt-3">
@@ -194,23 +218,33 @@
 
     <section class="my-5 p-5">
         <div class="row">
-            <div class="col-md-6 col-12 menuText wow zoomInLeft" data-wow-duration="1.2s" data-wow-delay="0.4s">
-                <h2 class="text-theme">Get started today and digitize your menu!</h2>
-                <p class="my-2 pt-3">Sign up for our starter plan and use up to three tablets for free!</p>
+            <div class="col-md-6 col-12 menuText Left">
+                <div class="ml-3">
+                    <h2 class="text-theme">Get started today and digitize your menu!</h2>
+                    <p class="my-2 pt-3">Sign up for our starter plan and use up to three tablets for free!</p>
+                </div>
             </div>
-            <div class="col-md-6 col-12 wow zoomInRight" data-wow-duration="1.2s" data-wow-delay="0.4s">
+            <!-- <div class="col-lg-1"></div> -->
+            <div class="col-md-6 col-12 mt-5 Right">
                 <div class="input-group newsletter">
                     <input type="email" class="form-control" placeholder="Enter your email">
-                    <span class="input-group-btn"><button class="btn btn-primary px-4" type="submit">Sign Up</button></span>
+                    <span class="input-group-btn"><button class="btn btn-primary px-2 btnSign" type="submit">Sign Up</button></span>
                 </div>
                 <small class="text-muted float-right">Use it for free. No credit card required.</small>
             </div>
         </div>
     </section>
 
-    <section id="resources" class="mt-5 p-5 wow zoomIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
-        <h2 class="text-theme my-3 pt-3 txtEdit mx-auto text-center">Download the app on iPad or Android tablet for
-            stunning dinning experience for your guests!</h2>
+    <section id="resources" class="mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <h2 class="text-theme my-3 pt-3 txtEdit mx-auto text-center">Download the app on iPad or Android tablet for
+                        stunning dinning experience for your guests!</h2>
+                </div>
+            </div>
+        </div>
 
         <ul class="d-flex flex-wrap justify-content-center my-5">
             <li class="mx-3 my-2"><a href="#"><img src="images/ios-btn.png"></a></li>
@@ -219,57 +253,50 @@
 
     </section>
 
-    <footer class="py-5">
-        <div class="inner-footer">
-            <div class="footer-col">
-                <img src="images/logo.png" class="img-fluid">
-                <ul class="mt-3">
-                    <li class="float-left"><a href="#"><img src="images/facebook-btn.png"></a></li>
-                    <li class="float-left"><a href="#"><img src="images/instagram-btn.png"></a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h6>Services</h6>
-                <ul class="mt-3">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing Plans</a></li>
-                    <li><a href="#">How it works</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h6>Company</h6>
-                <ul class="mt-3">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h6>Support</h6>
-                <ul class="mt-3">
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help Center</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h6>Account</h6>
-                <ul class="mt-3">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <button class="btn btn-white px-5 py-2">Request a Demo</button>
-            </div>
-        </div>
-        <div class="copyrights text-center pt-3 mt-5">Copyright © 2018 KingsTeck OÜ | All Rights Reserved</div>
+    <footer class="inner-footer p-4"><br>
+      <div class="container-fluid pl-4">
+        <div class="row foot">
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <img src="images/logo.png" width="90%">
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <p class="font-weight-bold">Services</p>
+            <p><a href="#">Features</a></p>
+            <p><a href="#">Pricing Plans</a></p>
+            <p><a href="#">How it works</a></p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <p class="font-weight-bold">Company</p>
+            <p><a href="#"> About us </a></p>
+            <p><a href="#"> Contact us </a></p>
+            <p><a href="#"> Privacy Policy </a></p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <p class="font-weight-bold">Support</p>
+            <p><a href="#"> FAQ </a></p>
+            <p><a href="#"> Help Center </a></p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <p class="font-weight-bold">Account</p>
+            <p><a href="#"> Login </a></p>
+            <p><a href="#"> Register </a></p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+              <a class="btn request px-4 font-weight-bold" href="#">Request a Demo</a>
+          </div>
+        </div><br>
+        <div class="fontawsem">
+            <a href="#"><img src="images/facebook-btn.png"></a>   
+            <a href="#"><img src="images/instagram-btn.png"></a>
+        </div><br>
+        <p class="text-center copyRight">Copyright © 2018 KingsTeck OÜ | All Rights Reserved</p>
+      </div>
     </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script> new WOW().init(); </script>
+    
 </body>
 
 </html>
