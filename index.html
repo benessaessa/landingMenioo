@@ -9,6 +9,14 @@
     <title>Menioo</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbar.activate {
+            background: linear-gradient(to right, #01BFD9,#CE00FF);
+            -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+    </style>
 </head>
 
 <body>
@@ -51,16 +59,18 @@
             <p class="text-light pt-3">Bring your menu to life and watch your restaurant
                 grow! Sign up for our starter plan and create menus on
                 up to three tablets for free.</p>
-
-            <ul class="d-flex justify-content-around btnHead flex-wrap">
-                <li class="m-1">
-                    <a class="btn btn-primary font-weight-bold textAbout shadow px-xl-4 px-3 py-2 mt-3 mb-1" href="#">Try it for Free Forever</a>
-                    <small class="text-white d-block text-center mb-3 font-italic">Up to 3 tablet menus</small>
-                </li>
-                <li class="m-1">
-                    <a class="btn btn-white-outline py-2 textAbout shadow-sm font-weight-bold px-xl-4 px-3 my-3" href="#">Schedule a Demo</a>
-                </li>
-            </ul>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a class="btn btn-primary btnTry font-weight-bold textAbout d-flex justify-content-center shadow px-xl-4 px-4 py-2 mt-3 mb-1" href="#">Try it for Free Forever</a><br>
+                        <small class="text-white mb-3 font-italic">Up to 3 tablet menus</small>
+                    </div>
+                    <div class="col-lg-6 float-right">
+                        <a class="btn btn-white-outline d-flex justify-content-center py-2 textAbout shadow-sm font-weight-bold px-4 px-xl-4 my-3" href="#">Schedule a Demo</a>
+                    </div>
+                </div>
+            </div>
 
             <ul class="d-flex mt-4 align-items-center mb-3">
                 <li class="text-white mr-3">Available on:</li>
@@ -69,7 +79,7 @@
             </ul>
         </div>
         <div class="right text-right">
-            <img width="100%" src="images/header-img.png">
+            <img class="img-fluid" src="images/header-img.png">
         </div>
     </div>
 
@@ -296,7 +306,16 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 70) {
+                $(".navbar").addClass("activate");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+            $(".navbar").removeClass("activate");
+            }
+        });
+    </script>
 </body>
 
 </html>
