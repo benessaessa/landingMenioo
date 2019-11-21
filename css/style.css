@@ -172,6 +172,13 @@ h4 {
     .priceDetails{
         margin: 0px !important;
     }
+    .switcher .notice{
+        color: #CE00FF;
+        font-size: 12px;
+        position: absolute;
+        top: -25px;
+        right: -20px !important;
+    }
 }
 .btnHead li a{
     letter-spacing: 0.1rem;
