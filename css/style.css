@@ -160,6 +160,18 @@ h4 {
         letter-spacing: 0.05rem;
         font-size: 1.3rem;
     }
+    .best-plan{
+        margin-top: 0rem !important;
+    }
+    .best-plan-badge{
+        top: 0rem !important;
+    }
+    .shitty-box .custom-bg p{
+        font-size: 9px;
+    }
+    .priceDetails{
+        margin: 0px !important;
+    }
 }
 .btnHead li a{
     letter-spacing: 0.1rem;
@@ -510,7 +522,7 @@ footer {
     margin: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 49px;
+    margin-top: 2rem;
 }
 
 .pricing-grid .grid h3 {}
@@ -546,7 +558,7 @@ footer {
     background: linear-gradient(to bottom, #CE00FF, #01BFD9);
     padding: 54px 0;
     border: 0 !important;
-    position: relative;
+    margin-top: -3rem;
 }
 
 .best-plan h2 {
@@ -572,7 +584,7 @@ footer {
 .best-plan-badge {
     position: absolute;
     background-image: url('../images/popular-badge.png?1');
-    top: 0;
+    top: -3rem;
     right: 0;
     width: 119px;
     height: 112px;
@@ -609,15 +621,24 @@ footer {
     background: #71018B;
 }
 
-.shitty-box .custom-bg ul {
+.priceDetails{
+    padding-top: 3rem;
+    margin:0rem 4rem 0rem 4rem;
+}
+
+.shitty-box .custom-bg img{
+    padding-right: 1rem;
+    width: 36px;
+}
+
+.shitty-box .custom-bg p {
     color: #FFF;
     display: flex;
     flex-wrap: wrap;
-    padding: 45px;
-    line-height: 51px;
+    line-height: 2rem;
 }
 
-.shitty-box .custom-bg ul li {
+.shitty-box .custom-bg p{
     flex: 0 50%;
 }
 
